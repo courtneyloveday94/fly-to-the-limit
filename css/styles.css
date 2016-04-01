@@ -1,3 +1,104 @@
-/*comments*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body, html {
+	background-color: #ccc;
+	height: 100%;
+}
 
-/* #idname .classname */
+#header {
+	height: 50px;
+	width: 100%;
+	min-width: 960px;
+	background-color: #6b7a88;
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	position: fixed;
+}
+
+#header img {
+	float: left;
+	height: 47px;
+	margin-left: 10px;
+}
+
+#navigation {
+	float: right;
+}
+#navigation li {
+	padding: 15px;
+	color: #fff;
+}
+#book-now-nav li{
+	border: 1px solid #fff;
+	border-radius: 4px; 
+	padding: 10px 15px;
+	margin: 0px;
+	font-weight: 700;
+}
+#navigation ul li {
+	display: inline-block;
+}
+#header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+#content {
+	width: 960px;
+	height: 100%;
+	min-height: 100%;
+	background-color: #fff;
+	margin: 0 auto -30px;
+}
+
+#home-section {
+	height: 100%;
+	background-color: pink
+}
+
+
+#about-us-section {
+	height: 100%;
+	background-color: blue;
+}
+
+
+#flights-section {
+
+}
+
+
+#gallery-section {
+
+}
+
+
+#book-now-section {
+
+}
+
+
+#contact-section {
+
+}
+
+
+#content:after {
+	content: '';
+	display: block;
+}
+
+#footer, #content:after {
+	height: 30px;
+}
+
+#footer {
+	background-color: #475059;
+	width: 100%;
+	position: fixed;
+}
