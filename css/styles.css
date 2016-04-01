@@ -52,19 +52,16 @@ body, html {
 	width: 960px;
 	height: 100%;
 	min-height: 100%;
-	background-color: #fff;
 	margin: 0 auto -30px;
 }
 
 #home-section {
-	height: 100%;
-	background-color: pink
+
 }
 
 
 #about-us-section {
-	height: 100%;
-	background-color: blue;
+
 }
 
 
