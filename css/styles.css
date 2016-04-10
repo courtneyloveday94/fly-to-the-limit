@@ -18,6 +18,7 @@ body, html {
 	font-weight: 300;
 	text-transform: uppercase;
 	position: fixed;
+	z-index: 1000;
 }
 
 #header img {
@@ -48,40 +49,74 @@ body, html {
 	display: block;
 	clear: both;
 }
+#buffer {
+	height: 50px;
+}
 #content {
 	width: 960px;
-	height: 100%;
+	height: calc(100% - 80px);
 	min-height: 100%;
 	margin: 0 auto -30px;
 }
-
+#home-banner img{
+	position: relative;
+	width: 100%;
+}
 #home {
-
+	height: calc(100% - 80px);
+	background-color: #fff;
+}
+#home ul {
+	display: inline-block;
+	list-style: none;
+	width: 100%;
+}
+#home li {
+	height: 115px;
+	width: 227px;
+	background-color: pink;
+	display: inline-block;
+}
+#home a:nth-child(1),
+#home a:nth-child(2),
+#home a:nth-child(3) {
+	margin-right: 13.1px;
+}
+#home a:nth-child(4) {
+	margin: 0;
+	width: 227px;
 }
 
+#home a {
+	text-decoration: none;
+	color: #fff;
+	width: 227px;;
+	text-align: center;
+}
 
 #about-us {
-
+	background-color: pink;
+	height: calc(100% - 80px);
 }
 
 
 #flights {
-
+	height: calc(100% - 80px);
 }
 
 
 #gallery {
-
+	height: calc(100% - 80px);
 }
 
 
 #book-now {
-
+	height: calc(100% - 80px);
 }
 
 
 #contact {
-
+	height: calc(100% - 80px);
 }
 
 
@@ -102,38 +137,56 @@ body, html {
 	font-size: 12px;
 	text-transform: uppercase;
 	text-decoration: none;
+	min-width: 970px;
 }
-#footer p {
-	width: 300px;
-	float: left;
+
+#footer ul {
+	text-align: center;
+}
+
+#footer li {
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
 	padding: 6px 10px;
 }
-#footer p a img {
-	display: inline;
+
+#footer li:nth-child(1) {
+	float: left;
+}
+
+#footer li:nth-child(2) a {
+	color: #c9c9c9;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+#footer li:nth-child(3){
+	float: right;
+	height: 30px;
 }
 #footer img {
 	width: 20px;
 	padding: 6.5px;
-}
-#top-selector {
-	margin: 0 auto;
 	position: relative;
-	font-weight: 700;
-	top: 6px;
+	top: -6px;
 }
-#footer a {
+#footer li:nth-child(3) a {
 	color: #c9c9c9;
 	text-decoration: none;
-}
-#footer-right {
-	float: right;
-	display: inline-block;
-}
-#footer-right a {
 	position: relative;
-	top: -10px;
-	padding-right: 10px;
+	top: -17px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
