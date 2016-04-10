@@ -55,32 +55,32 @@ body, html {
 	margin: 0 auto -30px;
 }
 
-#home-section {
+#home {
 
 }
 
 
-#about-us-section {
+#about-us {
 
 }
 
 
-#flights-section {
+#flights {
 
 }
 
 
-#gallery-section {
+#gallery {
 
 }
 
 
-#book-now-section {
+#book-now {
 
 }
 
 
-#contact-section {
+#contact {
 
 }
 
@@ -98,4 +98,45 @@ body, html {
 	background-color: #475059;
 	width: 100%;
 	position: fixed;
+	color: #c9c9c9;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
 }
+#footer p {
+	width: 300px;
+	float: left;
+	padding: 6px 10px;
+}
+#footer p a img {
+	display: inline;
+}
+#footer img {
+	width: 20px;
+	padding: 6.5px;
+}
+#top-selector {
+	margin: 0 auto;
+	position: relative;
+	font-weight: 700;
+	top: 6px;
+}
+#footer a {
+	color: #c9c9c9;
+	text-decoration: none;
+}
+#footer-right {
+	float: right;
+	display: inline-block;
+}
+#footer-right a {
+	position: relative;
+	top: -10px;
+	padding-right: 10px;
+}
+
+
+
+
+
+
