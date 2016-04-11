@@ -49,7 +49,7 @@ body, html {
 	display: block;
 	clear: both;
 }
-#buffer {
+.buffer {
 	height: 50px;
 }
 #content {
@@ -167,27 +167,27 @@ body, html {
 
 #about-us {
 	background-color: pink;
-	height: calc(100% - 80px);
+	height: calc(100% - 30px);
 }
 
 
 #flights {
-	height: calc(100% - 80px);
+	height: calc(100% - 30px);
 }
 
 
 #gallery {
-	height: calc(100% - 80px);
+	height: calc(100% - 30px);
 }
 
 
 #book-now {
-	height: calc(100% - 80px);
+	height: calc(100% - 30px);
 }
 
 
 #contact {
-	height: calc(100% - 80px);
+	height: calc(100% - 30px);
 }
 
 
