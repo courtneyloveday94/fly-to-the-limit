@@ -58,40 +58,111 @@ body, html {
 	min-height: 100%;
 	margin: 0 auto -30px;
 }
-#home-banner img{
+
+#home-banner {
+	display: block;
+	background: url(../img/milford-sound-banner.jpg) no-repeat center;
+	background-size: cover;
+	height: 70%;
 	position: relative;
-	width: 100%;
+	min-width: 970px;
+	min-height: 300px;
+}
+
+#home-banner p {
+	color: #fff;
+	font-size: 24px;
+	padding-left: 10px;
+}
+#home-banner p span {
+	color: #05a4b2;
+	font-style:  italic;
+	font-size: 18px;
+	position: relative;
+	font-weight: 700;
+	left: 40px;
+	top: -5px;
+}
+
+#banner-text-container {
+	width: 970px;
+	margin: 0 auto;
+	position: relative;
+	top: 70%;
+}
+#banner-text-background {
+	background-color: rgba(255,255,255,0.35);
+	width: 790px;
+	height: 65px;
+	position: relative;
+	left: -120px;
+}
+#banner-text {
+	position: relative;
+	top: -65px;
 }
 #home {
-	height: calc(100% - 80px);
-	background-color: #fff;
+	height: calc(30% - 50px);
 }
 #home ul {
 	display: inline-block;
 	list-style: none;
 	width: 100%;
+	margin: 3.5% 0;
 }
 #home li {
-	height: 115px;
-	width: 227px;
-	background-color: pink;
+	height: 117px;
+	width: 230px;
+	background-color: rgba(6,204,223,0.4);
 	display: inline-block;
 }
+
 #home a:nth-child(1),
 #home a:nth-child(2),
 #home a:nth-child(3) {
-	margin-right: 13.1px;
+	margin-right: 10px;
 }
 #home a:nth-child(4) {
 	margin: 0;
-	width: 227px;
+	width: 230px;
+	float: right;
 }
 
 #home a {
 	text-decoration: none;
 	color: #fff;
-	width: 227px;;
+	width: 230px;;
 	text-align: center;
+	position: relative;
+	top: 50px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
+	z-index: 5;
+}
+#home a p {
+	position: relative;
+	top: 40px;
+}
+
+#home li {
+	position: relative;
+	top: -50px;
+}
+#home-link-backgrounds {
+	z-index: 1;
+	position: relative;
+	top: -134.5px;
+	height: 117px;
+}
+#home-link-backgrounds li:nth-child(1),
+#home-link-backgrounds li:nth-child(2),
+#home-link-backgrounds li:nth-child(3){
+	margin-right: 10px;
+}
+#home-link-backgrounds li:nth-child(4) {
+	width: 230px;
+	margin: -2px;
 }
 
 #about-us {
@@ -138,6 +209,7 @@ body, html {
 	text-transform: uppercase;
 	text-decoration: none;
 	min-width: 970px;
+	bottom: 0;
 }
 
 #footer ul {
