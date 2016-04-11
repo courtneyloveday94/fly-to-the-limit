@@ -63,7 +63,7 @@ body, html {
 	display: block;
 	background: url(../img/milford-sound-banner.jpg) no-repeat center;
 	background-size: cover;
-	height: 70%;
+	height: calc(70% - 30px);
 	position: relative;
 	min-width: 970px;
 	min-height: 300px;
@@ -102,7 +102,7 @@ body, html {
 	top: -65px;
 }
 #home {
-	height: calc(30% - 50px);
+	height: calc(180px + 50px);
 }
 #home ul {
 	display: inline-block;
@@ -196,11 +196,11 @@ body, html {
 	display: block;
 }
 
-#footer, #content:after {
+#compact-footer, #content:after {
 	height: 30px;
 }
 
-#footer {
+#compact-footer {
 	background-color: #475059;
 	width: 100%;
 	position: fixed;
@@ -210,40 +210,41 @@ body, html {
 	text-decoration: none;
 	min-width: 970px;
 	bottom: 0;
+	z-index: 1000;
 }
 
-#footer ul {
+#compact-footer ul {
 	text-align: center;
 }
 
-#footer li {
+#compact-footer li {
 	display: inline-block;
 	text-decoration: none;
 	list-style: none;
 	padding: 6px 10px;
 }
 
-#footer li:nth-child(1) {
+#compact-footer li:nth-child(1) {
 	float: left;
 }
 
-#footer li:nth-child(2) a {
+#compact-footer li:nth-child(2) a {
 	color: #c9c9c9;
 	text-decoration: none;
 	font-weight: 700;
 }
 
-#footer li:nth-child(3){
+#compact-footer li:nth-child(3){
 	float: right;
 	height: 30px;
 }
-#footer img {
+#compact-footer img {
 	width: 20px;
 	padding: 6.5px;
 	position: relative;
 	top: -6px;
 }
-#footer li:nth-child(3) a {
+#compact-footer li:nth-child(3) a {
 	color: #c9c9c9;
 	text-decoration: none;
 	position: relative;
