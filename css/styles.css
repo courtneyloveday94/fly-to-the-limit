@@ -193,6 +193,7 @@ body, html {
 #content:after {
 	content: '';
 	display: block;
+	clear: both;
 }
 
 #compact-footer, #content:after {
