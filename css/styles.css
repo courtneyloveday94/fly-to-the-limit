@@ -52,11 +52,16 @@ body, html {
 .buffer {
 	height: 50px;
 }
-#content {
+/*#content {
 	width: 960px;
-	height: calc(100% - 80px);
+	
 	min-height: 100%;
 	margin: 0 auto -30px;
+}*/
+.section {
+	width: 970px;
+	margin: 0 auto;
+	height: calc(100% - 80px);
 }
 
 #home-banner {
@@ -184,19 +189,21 @@ body, html {
 	height: calc(100% - 30px);
 }
 
-
+/* start of the code for the contact section */
 #contact {
 	height: calc(100% - 30px);
+	width: 100%;
 }
 
-
-#content:after {
-	content: '';
-	display: block;
-	clear: both;
+#contact-content {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	
 }
+/* end of the code for the contact section */
 
-#compact-footer, #content:after {
+#compact-footer {
 	height: 30px;
 }
 
@@ -257,7 +264,7 @@ body, html {
 	background-color: #475059;
 	position: relative;
 	z-index: 1000;
-	top: calc(400% + 110px);
+	top: 0px;
 	height: 200px;
 	margin: 0 auto;
 	text-align: center;
