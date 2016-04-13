@@ -52,12 +52,7 @@ body, html {
 .buffer {
 	height: 50px;
 }
-/*#content {
-	width: 960px;
-	
-	min-height: 100%;
-	margin: 0 auto -30px;
-}*/
+
 .section {
 	width: 970px;
 	margin: 0 auto;
@@ -107,7 +102,15 @@ body, html {
 	top: -65px;
 }
 #home {
-	height: calc(180px + 50px);
+	height: calc(30%);
+	position: relative;
+}
+#vertical-center {
+	width: 960px;
+	height: 117px;
+	position: absolute;
+	top: calc(50% - 58.5px);
+	margin-top: -58.5px;
 }
 #home ul {
 	display: inline-block;
@@ -167,7 +170,7 @@ body, html {
 }
 #home-link-backgrounds li:nth-child(4) {
 	width: 230px;
-	margin: -2px;
+	margin-left: -2.5px;
 }
 
 #about-us {
