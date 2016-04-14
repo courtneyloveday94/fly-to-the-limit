@@ -175,6 +175,7 @@ body, html {
 /* start of the code for the about-us section */
 #about-us {
 	height: calc(100% - 30px);
+	position: relative;
 }
 #about-us:after {
 	content: '';
@@ -183,9 +184,18 @@ body, html {
 }
 #left-about-us {
 	float: left;
+	position: absolute;
+	height: 683px;
+	width: 448px;
+	top: calc(50% - 321.5px);
 }
 #right-about-us {
 	float: right;
+	position: absolute;
+	height: 683px;
+	width: 448px;
+	top: calc(50% - 321.5px);
+	right: 0;
 }
 article {
 	background-color: #fff;
