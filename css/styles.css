@@ -34,12 +34,52 @@ body, html {
 	padding: 15px;
 	color: #fff;
 }
-#book-now-nav li{
+#navigation a {
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	font-weight: 700;
+	transition: 0.2s;
+}
+#navigation a:active {
+	color: #05ccdf;
+	font-weight: 700;
+}
+#navigation li:nth-child(1) {
+	text-align: center;
+}
+#navigation li:nth-child(2) {
+	width: 70.84px;
+	text-align: center;
+}
+#navigation li:nth-child(3) {
+	width: 56.9px;
+	text-align: center;
+}
+#navigation li:nth-child(4) {
+	width: 61.45px;
+	text-align: center;
+}
+#navigation li:nth-child(6) {
+	width: 66.24px;
+	text-align: center;
+}
+
+#book-now-nav a{
 	border: 1px solid #fff;
 	border-radius: 4px; 
 	padding: 10px 15px;
 	margin: 0px;
 	font-weight: 700;
+	width: 85px;
+}
+#book-now-nav a:hover {
+	background-color: #fff;
+	color: #05ccdf;
+	border: 1px solid #05ccdf;	
 }
 #navigation ul li {
 	display: inline-block;
