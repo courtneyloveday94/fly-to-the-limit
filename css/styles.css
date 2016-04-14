@@ -213,8 +213,8 @@ article img {
 	width: 159px;
 	margin-right: 10px;
 	position: relative;
-	top: -10;
-	left: -10;
+	top: -10px;
+	left: -10px;
 }
 article h1 {
 	font-size: 16px;
