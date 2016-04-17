@@ -291,15 +291,203 @@ article p {
 	height: calc(100% - 30px);
 }
 
-
+/* start of the code for the contact section */
 #gallery {
 	height: calc(100% - 30px);
+	position: relative;
+}
+#gallery-thumbnails {
+	position: absolute;
+	height: 692px;
+	margin: 0 auto;
+	top: calc(50% - 318px);
+	left: 54px;
+}
+.gallery-row-1 img,
+.gallery-row-2 img,
+.gallery-row-3 img,
+.gallery-row-4 img {
+	margin-right: 20px;
+}
+.gallery-row-1 img,
+.gallery-row-2 img,
+.gallery-row-3 img {
+	margin-bottom: 20px;
+}
+.last-column img {
+	margin-right: 0px !important;
+}
+.youtube-icon img{
+	width: 44px;
+	height: 29px;
+	position: absolute;
+	top: 10px;
+}
+
+#left-scroll {
+	float: left;
+	position: absolute;
+	left: -40px;
+	top: calc(50% - 50px);
+	font-size: 70px;
+	color: #ddd;
+}
+
+#right-scroll {
+	float: right;
+	position: absolute;
+	right: -20px;
+	top: calc(50% - 53px);
+	font-size: 70px;
+	color: #888;
 }
 
 
+#gallery-popup {
+	position: relative;
+	z-index: 20;
+}
+.lightbox-target {
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+	width: 100%;
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+	overflow: hidden;
+}
+
+.lightbox-target img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom: 0;
+	max-height: 0%;
+	max-width: 0%;
+	border: 3px solid white;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+	box-sizing: border-box;
+	transition: .5s ease-in-out;
+}
+a.lightbox-close {
+	display: block;
+	width:50px;
+	height:50px;
+	box-sizing: border-box;
+	background: transparent;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: -80px;
+	right: 0;
+	transition: .5s ease-in-out;
+}
+a.lightbox-close:before {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: #fff;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	transform:rotate(45deg);
+}
+a.lightbox-close:after {
+	content: "";
+	display: block;
+	height: 30px;
+	width: 1px;
+	background: #fff;
+	position: absolute;
+	left: 26px;
+	top:10px;
+	transform:rotate(-45deg);
+}
+.lightbox-target:target {
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+}
+
+.lightbox-target:target img {
+	max-height: 100%;
+	max-width: 843px;
+}
+
+.lightbox-target:target a.lightbox-close {
+	top: 50px;
+}
+.image-holder img {
+	background-color: pink;
+	max-height: 450px;
+	max-width: 845px;
+}
+.lightbox a {
+	color: #05ccdf;
+	position: relative;
+}
+.lightbox i {
+	position: absolute;
+	z-index: 1;
+	font-size: 40px;
+	color: #05ccdf;
+}
+
+#thumbnail-slider {
+	position: absolute;
+	bottom: 50px;
+	height: 100px;
+	width: 862px;
+	margin: 0 auto;
+	overflow: auto;
+	white-space: nowrap;
+}
+#thumbnail-slider img {
+	all: initial;
+	* {
+		all:unset;
+	}
+}
+#thumbnail-slider a img {
+	margin-right: 9.5px;
+}
+.gallery-section {
+	width: 862px;
+	margin: 0 auto;
+	height: calc(100% - 80px);
+
+}
+
+.gallery-section #left-scroll {
+	float: left;
+	position: relative;
+	left: -40px;
+	top: calc(50% - 0px);
+	font-size: 70px;
+	color: #ddd;
+}
+
+.gallery-section #right-scroll {
+	float: right;
+	position: relative;
+	right: -40px;
+	top: calc(50% - 0px);
+	font-size: 70px;
+	color: #ddd;
+}
+
+
+/* end of the code for the gallery section */
+
+/* start of the code for the book-now section */
 #book-now {
 	height: calc(100% - 30px);
 }
+/* end of the code for the book-now section */
 
 /* start of the code for the contact section */
 #contact {
