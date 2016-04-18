@@ -8,6 +8,11 @@ body, html {
 	height: 100%;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 #header {
 	height: 50px;
 	width: 100%;
@@ -303,12 +308,17 @@ article p {
 	top: calc(50% - 318px);
 	left: 54px;
 }
+#gallery-thumbnails img {
+	height: 153px;
+	width: 153px;
+}
 .gallery-row-1 img,
 .gallery-row-2 img,
 .gallery-row-3 img,
 .gallery-row-4 img {
 	margin-right: 20px;
 	height: 153px;
+	width: 153px;
 }
 .gallery-row-1 img,
 .gallery-row-2 img,
@@ -355,23 +365,21 @@ article p {
 	background: rgba(0,0,0,.7);
 	width: 100%;
 	opacity: 0;
-	transition: opacity .5s ease-in-out;
 	overflow: hidden;
 }
 
 .lightbox-target img {
-	margin: auto;
+	margin: calc(50% - 450px) auto;
 	position: absolute;
 	top: 0;
 	left:0;
 	right:0;
 	bottom: 0;
-	max-height: 0%;
+	max-height: 450px;
 	max-width: 0%;
-	border: 3px solid white;
 	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
 	box-sizing: border-box;
-	transition: .5s ease-in-out;
+	
 }
 a.lightbox-close {
 	display: block;
@@ -384,7 +392,6 @@ a.lightbox-close {
 	position: absolute;
 	top: -80px;
 	right: 0;
-	transition: .5s ease-in-out;
 }
 a.lightbox-close:before {
 	content: "";
@@ -416,11 +423,19 @@ a.lightbox-close:after {
 
 .lightbox-target:target img {
 	max-height: 100%;
-	max-width: 843px;
+	max-width: 860px;
 }
-
+.lightbox-target:target i {
+	max-height: 100%;
+	max-width: 860px;
+}
 .lightbox-target:target a.lightbox-close {
 	top: 50px;
+}
+.image-holder img {
+	background-color: pink;
+	max-height: 450px;
+	max-width: 845px;
 }
 .image-holder img {
 	background-color: pink;
@@ -454,8 +469,11 @@ a.lightbox-close:after {
 	}
 }
 #thumbnail-slider a img {
-	margin-right: 9.5px;
+	margin-right: 8px;
+	width:;
+	height:75px;
 }
+
 .gallery-section {
 	width: 862px;
 	margin: 0 auto;
