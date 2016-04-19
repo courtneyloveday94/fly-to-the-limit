@@ -369,7 +369,7 @@ article p {
 }
 
 .lightbox-target img {
-	margin: calc(50% - 450px) auto;
+	margin: auto;
 	position: absolute;
 	top: 0;
 	left:0;
@@ -433,15 +433,19 @@ a.lightbox-close:after {
 	top: 50px;
 }
 .image-holder img {
-	background-color: pink;
 	max-height: 450px;
 	max-width: 845px;
+	margin: auto;
 }
-.image-holder img {
-	background-color: pink;
-	max-height: 450px;
-	max-width: 845px;
+div.image-holder, iframe {
+	height: 450px;
+	width: 860px;
+	margin: auto;
+	display: block;
+	position: relative;
+	top: calc(50% - 225px);
 }
+ 
 .lightbox a {
 	color: #05ccdf;
 	position: relative;
