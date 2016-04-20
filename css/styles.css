@@ -301,6 +301,10 @@ article p {
 	height: calc(100% - 30px);
 	position: relative;
 }
+.fa {
+	color: #05ccdf;
+}
+
 #gallery-thumbnails {
 	position: absolute;
 	height: 692px;
@@ -334,26 +338,6 @@ article p {
 	position: absolute;
 	top: 10px;
 }
-
-#left-scroll {
-	float: left;
-	position: absolute;
-	left: -40px;
-	top: calc(50% - 50px);
-	font-size: 70px;
-	color: #ddd;
-}
-
-#right-scroll {
-	float: right;
-	position: absolute;
-	right: -20px;
-	top: calc(50% - 53px);
-	font-size: 70px;
-	color: #888;
-}
-
-
 #gallery-popup {
 	position: relative;
 	z-index: 20;
@@ -476,6 +460,7 @@ div.image-holder, iframe {
 	margin-right: 8px;
 	width:;
 	height:75px;
+	position: relative;
 }
 
 .gallery-section {
