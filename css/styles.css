@@ -510,6 +510,7 @@ div .image-holder, iframe {
 /* start of the code for the contact section */
 .google-maps iframe {
 	width: 100% !important;
+	height: 350px !important;
 }
 
 #contact {
