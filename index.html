@@ -878,6 +878,73 @@
 				</div>
 			</div>
 			<div id="book-now-right">
+				<form action="book.php" method="get">
+					<div>
+						<label class="label" for="name">Name:</label>
+						<input type="text" id="name" required>
+					</div>
+					<div>
+						<label class="label" for="email">Email:</label>
+						<input type="email" id="email" required>
+					</div>
+					<div>
+						<label class="label" for="phone">Phone Number:</label>
+						<input type="tel" id="phone" required>
+					</div>
+
+					<div class="radio-group" id="flight-group">
+						<label>Select flight type:</label>
+						<div>
+							<input type="radio" id="1hr-scenic-flight" name="flight">
+							<label for="1hr-scenic-flight">1 hour scenic flight</label>
+						</div>
+						<div>
+							<input type="radio" id="2hr-scenic-flight" name="flight">
+							<label for="2hr-scenic-flight">2 hour scenic flight</label>
+						</div>
+						<div>
+							<input type="radio" id="mountain-flight" name="flight">
+							<label for="mountain-flight">Mountain viewing at sunset</label>
+						</div>
+						<div>
+							<input type="radio" id="lake-flight" name="flight">
+							<label for="lake-flight">Lake trip (amphibian aircraft only)</label>
+						</div>
+						<div>
+							<input type="radio" id="photographic-flight" name="flight">
+							<label for="photographic-flight">Photographic flight</label>
+						</div>
+						<div>
+							<input type="radio" id="charter-flight" name="flight">
+							<label for="charter-flight">Charter flight</label>
+						</div>
+					</div>
+
+					<div class="radio-group" id="aircraft-group">
+						<label>Select aircraft:</label>
+						<div>
+							<input type="radio" id="fixed-wing" name="aircraft">
+							<label for="fixed-wing">Fixed wing</label>
+						</div>
+						<div>
+							<input type="radio" id="helicopter" name="aircraft">
+							<label for="helicopter">Helicopter</label>
+						</div>
+						<div>
+							<input type="radio" id="glider" name="aircraft">
+							<label for="glider">Glider</label>
+						</div>
+						<div>
+							<input type="radio" id="amphibian" name="aircraft">
+							<label for="amphibian">Amphibian</label>
+						</div>
+					</div>
+
+					<label for="passengers">No. of passengers:</label>
+					
+					
+
+				</form>
 			</div>
 		</div>
 		<!-- end of book-now section -->

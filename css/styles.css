@@ -624,8 +624,35 @@ div .image-holder, iframe {
 	font-weight: 700;
 }
 
+.label {
+	text-transform: uppercase;
+	font-size: 14px;
+	width: 150px;
+	display: inline-block;
+}
 
+.radio-group:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 
+.radio-group > label {
+	display: block;
+	width: 150px;
+	float: left;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#flight-group > label {
+	height: 150px;
+	background-color: rose;
+	
+}
+#aircraft-group > label {
+	height: 150px;
+}
 
 
 /* end of the code for the book-now section */
@@ -798,7 +825,6 @@ div .image-holder, iframe {
 	margin: 10px;
 	width: 250px;
 }
-
 
 
 
