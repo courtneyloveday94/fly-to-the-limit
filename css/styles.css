@@ -306,7 +306,7 @@ a {
 	white-space: nowrap;
 	position: absolute;
 	height: 550px;
-	top: calc(50% - 275px);
+	top: calc(50% - 250px);
 	left: calc(50% - 430px);
 }
 
@@ -333,6 +333,7 @@ a {
 	font-weight: 700;
 	font-size: 24px;
 	margin-bottom: 15px;
+	position: relative;
 }
 
 #flights h2 {
@@ -559,7 +560,74 @@ div .image-holder, iframe {
 /* start of the code for the book-now section */
 #book-now {
 	height: calc(100% - 30px);
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
 }
+#book-now:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#book-now-left {
+	height: 650px;
+	position: absolute;
+	top: calc(50% - 300px);
+	left: 0;
+}
+
+#book-now-right {	
+	height: 650px;
+	background-color: #ddd;
+	width: 500px;
+	position: absolute;
+	top: calc(50% - 300px);
+	right: 0;
+}
+
+#book-now-info {
+	position: relative;	
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	height: 650px;
+}
+
+#book-now-info li {
+	height: 155px;
+	background-color: rgba(6,204,223,0.4);
+	list-style: none;
+	width: 284px;
+	margin-bottom: 10px;
+}
+#book-now-info-foreground {
+	z-index: 2;
+}
+
+#book-now-info-background {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+}
+#book-now-info h1 {
+	font-size: 24px;
+	font-weight: 700;
+	position: relative;
+	top: 45px;
+}
+
+#book-now-info p {
+	position: relative;
+	top: 60px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+
+
+
+
 /* end of the code for the book-now section */
 
 /* start of the code for the contact section */
@@ -576,8 +644,7 @@ div .image-holder, iframe {
 #contact-content {
 	width: 960px;
 	margin: 0 auto;
-	background-color: #fff;
-	
+	background-color: #fff;	
 }
 /* end of the code for the contact section */
 
