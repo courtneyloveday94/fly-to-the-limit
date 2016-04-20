@@ -99,7 +99,7 @@ a {
 }
 
 .section {
-	width: 970px;
+	width: 960px;
 	margin: 0 auto;
 	height: calc(100% - 80px);
 }
@@ -242,7 +242,7 @@ a {
 	top: calc(50% - 321.5px);
 	right: 0;
 }
-article {
+#about-us article {
 	background-color: #fff;
 	width: 408px;
 	margin: 20px;
@@ -251,7 +251,7 @@ article {
 	padding: 10px;
 	box-sizing: border-box;
 }
-article img {
+#about-us article img {
 	float:left;
 	width: 207px;
 	height: 159px;
@@ -261,7 +261,7 @@ article img {
 	top: -10px;
 	left: -10px;
 }
-article h1 {
+#about-us article h1 {
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -279,22 +279,77 @@ article h1 {
 .lowercase {
 	text-transform: lowercase !important;
 }
-article p {
+#about-us article p {
 	font-size: 11px;
 	line-height: 13.8px;
 }
-.large-article {
+#about-us .large-article {
 	height: 406px;
 }
-.large-article img{
+#about-us .large-article img{
 	width: 207px;
 	height: 406px;
 }
 /* end of the code for the about-us section */
 
+/* start of the code for the flights section */
+
 #flights {
 	height: calc(100% - 30px);
+	position: relative;
 }
+
+#flights ul {
+	width: 860px;
+	margin: 0 auto;
+	overflow: auto;
+	white-space: nowrap;
+	position: absolute;
+	height: 550px;
+	top: calc(50% - 275px);
+	left: calc(50% - 430px);
+}
+
+#flights ul li {
+	display: inline-block;
+	list-style: none;
+	vertical-align: top;
+}
+
+#flights li {
+	width: 240px;
+	height: 500px;
+	overflow: visible;
+	white-space: normal;
+	margin-right: 50px;
+}
+
+#flights img {
+	margin-bottom: 40px;
+}
+
+#flights h1 {
+	color: #05a4b2;
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+#flights h2 {
+	color: #3f3f3f;
+	font-weight: 300;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#flights p {
+	color: #3f3f3f;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+/* end of the code for the flights section */
 
 /* start of the code for the contact section */
 #gallery {
@@ -426,7 +481,7 @@ div .image-holder, iframe {
 	margin: auto;
 	display: block;
 	position: relative;
-	top: calc(50% - 225px);
+	top: calc(50% - 250px);
 }
 /* css selector to chrome to try and get the youtube video in the right place */
 
@@ -434,7 +489,7 @@ div .image-holder, iframe {
 	max-height: 450px;
 	max-width: 860px;
 	position: fixed;
-	top: calc(50% - 225px);
+	top: calc(50% - 250px);
 	left: calc(50% - 430px);
 }
 
