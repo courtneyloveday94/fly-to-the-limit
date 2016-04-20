@@ -351,7 +351,6 @@ article p {
 	opacity: 0;
 	overflow: hidden;
 }
-
 .lightbox-target img {
 	margin: auto;
 	position: absolute;
@@ -418,10 +417,10 @@ a.lightbox-close:after {
 }
 .image-holder img {
 	max-height: 450px;
-	max-width: 845px;
+	max-width: 860px;
 	margin: auto;
 }
-div.image-holder, iframe {
+div .image-holder, iframe {
 	height: 450px;
 	width: 860px;
 	margin: auto;
@@ -429,6 +428,17 @@ div.image-holder, iframe {
 	position: relative;
 	top: calc(50% - 225px);
 }
+/* css selector to chrome to try and get the youtube video in the right place */
+
+.chrome .image-holder {
+	max-height: 450px;
+	max-width: 860px;
+	position: fixed;
+	top: calc(50% - 225px);
+	left: calc(50% - 430px);
+}
+
+/* end of the code for specifically chrome */
  
 .lightbox a {
 	color: #05ccdf;
@@ -498,6 +508,10 @@ div.image-holder, iframe {
 /* end of the code for the book-now section */
 
 /* start of the code for the contact section */
+.google-maps iframe {
+	width: 100% !important;
+}
+
 #contact {
 	height: calc(100% - 30px);
 	width: 100%;
