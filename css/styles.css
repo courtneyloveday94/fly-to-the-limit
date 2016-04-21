@@ -396,11 +396,11 @@ a {
 }
 #gallery-popup {
 	position: relative;
-	z-index: 20;
+	z-index: 2;
 }
 .lightbox-target {
 	position: fixed;
-	top: -100%;
+	top: 100%;
 	width: 100%;
 	background: rgba(0,0,0,.7);
 	width: 100%;
@@ -475,6 +475,7 @@ a.lightbox-close:after {
 	max-height: 450px;
 	max-width: 860px;
 	margin: auto;
+	overflow: hidden;
 }
 div .image-holder, iframe {
 	height: 450px;
@@ -489,9 +490,10 @@ div .image-holder, iframe {
 .chrome .image-holder {
 	max-height: 450px;
 	max-width: 860px;
-	position: fixed;
+	position: absolute;
 	top: calc(50% - 250px);
 	left: calc(50% - 430px);
+	overflow: hidden;
 }
 
 /* end of the code for specifically chrome */
@@ -571,18 +573,18 @@ div .image-holder, iframe {
 }
 
 #book-now-left {
-	height: 650px;
+	height: 680px;
 	position: absolute;
-	top: calc(50% - 300px);
+	top: calc(50% - 320px);
 	left: 0;
 }
 
 #book-now-right {	
-	height: 650px;
+	height: 680px;
 	background-color: #ddd;
 	width: 500px;
 	position: absolute;
-	top: calc(50% - 300px);
+	top: calc(50% - 320px);
 	right: 0;
 }
 
@@ -591,7 +593,7 @@ div .image-holder, iframe {
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
-	height: 650px;
+	height: 680px;
 }
 
 #book-now-info li {
@@ -599,7 +601,7 @@ div .image-holder, iframe {
 	background-color: rgba(6,204,223,0.4);
 	list-style: none;
 	width: 284px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 #book-now-info-foreground {
 	z-index: 2;
@@ -624,11 +626,20 @@ div .image-holder, iframe {
 	font-weight: 700;
 }
 
+#book-now label {
+	font-size: 14px;
+}
+
 .label {
 	text-transform: uppercase;
 	font-size: 14px;
 	width: 150px;
 	display: inline-block;
+	font-weight: 800;
+}
+
+#book-now .label {
+	width: 160px;
 }
 
 .radio-group:after {
@@ -646,14 +657,28 @@ div .image-holder, iframe {
 }
 
 #flight-group > label {
-	height: 150px;
-	background-color: rose;
-	
+	height: 132px;
 }
 #aircraft-group > label {
-	height: 150px;
+	height: 90px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height:auto;
+}
+.form-section {
+	margin-top: 10px;
 }
 
+#book-now .submit {
+	display: block;
+	padding: 10px 15px;
+	margin: 5px auto;
+}
+
+#book-now-form {
+	margin: 20px 50px;
+}
 
 /* end of the code for the book-now section */
 
@@ -666,13 +691,73 @@ div .image-holder, iframe {
 #contact {
 	height: calc(100% - 30px);
 	width: 100%;
+	color: #545454;
+}
+#contact-container {
+	position: relative;
+	height: calc(100% - 400px);
+}
+#contact-container-child {
+	width: 960px;
+	height: 323px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -161.5px 0 0 -470px;
+}
+#contact-container-child:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
-#contact-content {
-	width: 960px;
-	margin: 0 auto;
-	background-color: #fff;	
+.office-details {
+	float: left;
+	width: 461px;
 }
+.contact-form {
+	float: right;
+	width: 461px;
+}
+table {
+	margin-bottom: 10px;
+}
+th {
+	width: 150px;
+	font-size: 14px;
+	font-weight: 800;
+	color: #545454;
+	text-align: left;
+}
+td {
+	font-weight: 300;
+	font-size: 14px;
+	color: #545454;
+}
+.table-time {
+	padding-left: 30px;
+}
+
+#contact-form input {
+	width: 300px;
+}
+
+#contact-form label {
+	font-weight: 800;
+}
+
+#contact-submit {
+	padding: 10px 15px;
+	width: 100px !important;
+	font-size: 14px;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	background-color: none;
+	color: #545454;
+	margin-left: calc(50% - 50px);
+}
+
 /* end of the code for the contact section */
 
 #compact-footer {
@@ -825,7 +910,3 @@ div .image-holder, iframe {
 	margin: 10px;
 	width: 250px;
 }
-
-
-
-

@@ -231,8 +231,6 @@
 			</div>
 		</div>
 		<div id="gallery-popup">
-
-		<!-- you need to repeat this code for every image -->
 			<div class="lightbox-target" id="img1">
 				<div class="image-holder">
 					<img src="img/gallery-large-img1.jpg">
@@ -389,7 +387,7 @@
 			</div>
 			<div class="lightbox-target" id="img6">
 				<div class="image-holder">
-					<img src="img/gallery-large-img6.jpg">
+					<img src="http://placehold.it/450x450">
 				</div>
 				<a class="lightbox-close" href="index.html#gallery"></a>
 				<div class="gallery-section">
@@ -842,8 +840,6 @@
 				</div>
 			</div>
 		</div>
-
-
 		<!-- end of gallery section -->
 
 		<!-- start of book-now section -->
@@ -878,22 +874,25 @@
 				</div>
 			</div>
 			<div id="book-now-right">
-				<form action="book.php" method="get">
+				<form id="book-now-form" action="book.php" method="get">
 					<div>
 						<label class="label" for="name">Name:</label>
 						<input type="text" id="name" required>
+						<span id="name-message"></span>
 					</div>
 					<div>
 						<label class="label" for="email">Email:</label>
 						<input type="email" id="email" required>
+						<span id="email-message"></span>
 					</div>
 					<div>
 						<label class="label" for="phone">Phone Number:</label>
 						<input type="tel" id="phone" required>
+						<span id="phone-message"></span>
 					</div>
 
-					<div class="radio-group" id="flight-group">
-						<label>Select flight type:</label>
+					<div class="radio-group form-section" id="flight-group">
+						<label class="label">Select flight type:</label>
 						<div>
 							<input type="radio" id="1hr-scenic-flight" name="flight">
 							<label for="1hr-scenic-flight">1 hour scenic flight</label>
@@ -917,11 +916,12 @@
 						<div>
 							<input type="radio" id="charter-flight" name="flight">
 							<label for="charter-flight">Charter flight</label>
+							<span id="flight-message"></span>
 						</div>
 					</div>
 
-					<div class="radio-group" id="aircraft-group">
-						<label>Select aircraft:</label>
+					<div class="radio-group form-section" id="aircraft-group">
+						<label class="label">Select aircraft:</label>
 						<div>
 							<input type="radio" id="fixed-wing" name="aircraft">
 							<label for="fixed-wing">Fixed wing</label>
@@ -937,13 +937,69 @@
 						<div>
 							<input type="radio" id="amphibian" name="aircraft">
 							<label for="amphibian">Amphibian</label>
+							<span id="aircraft-message"></span>
 						</div>
 					</div>
 
-					<label for="passengers">No. of passengers:</label>
-					
-					
+					<div class="form-section">
+						<label class="label" for="passengers">No. of passengers:</label>
+						<input type="number" id="passengers" min="1" max="10">
+						<span id="passengers-message"></span>
+						<!-- error message more than 10 "Please enquire prior to booking for more than 10 people." -->
+					</div>
+					<div>
+						<label class="label" for="location">Location:</label>
+						<input type="text" id="location">
+						<span id="location-message"></span>
+					</div>
+					<div>
+						<label class="label" for="date">Date:</label>
+						<input type="date" id="date">
+						<span id="date-message"></span>
+					</div>
+					<div>
+						<label class="label" for="Time">Time:</label>
+						<input type="Time" id="Time">
+						<span id="time-message"></span>
+					</div>
 
+					<div class="form-section">
+						<label class="label" style="width: 400px;">[Applicable to Charter flights only]</label>
+						<div>
+							<label class="label" for="drop-off-location">Drop off location:</label>
+							<input type="text" id="drop-off-location">
+							<span id="drop-off-location-message"></span>
+						</div>
+						<div>
+							<label class="label" for="drop-off-date">Drop off date:</label>
+							<input type="date" id="drop-off-date">
+							<span id="drop-off-date-message"></span>
+						</div>
+						<div>
+							<label class="label" for="drop-off-time">Drop off time:</label>
+							<input type="time" id="drop-off-time">
+							<span id="drop-off-time-message"></span>
+						</div>
+						<div class="form-section">
+							<label class="label" for="pick-up-location">Pick up location:</label>
+							<input type="text" id="pick-up-location">
+							<span id="pick-up-location-message"></span>
+						</div>
+						<div>
+							<label class="label" for="pick-up-date">Pick up date:</label>
+							<input type="date" id="pick-up-date">
+							<span id="pick-up-date-message"></span>
+						</div>
+						<div>
+							<label class="label" for="pick-up-time">Pick up time:</label>
+							<input type="time" id="pick-up-time">
+							<span id="pick-up-time-message"></span>
+						</div>
+					</div>
+				
+					<div>
+						<input class="submit" type="submit" value="Submit">
+					</div>
 				</form>
 			</div>
 		</div>
@@ -955,8 +1011,92 @@
 			<div class="google-maps">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90240.733362039!2d168.62181506987702!3d-45.02446024541194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d51df1d7a8de5f%3A0x500ef868479a600!2sQueenstown!5e0!3m2!1sen!2snz!4v1460503690226" width="100%" min-width="960px" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
-			<div id="contact-content">
-				<p>contact</p>
+
+			<div id="contact-container">
+				<div id="contact-container-child">
+					<div class="office-details">
+
+						<table id="office-hours">
+							<tr>
+								<th valign="top" rowspan="7">Office hours:</th>
+								<td>Monday</td>
+								<td class="table-time">00:00 - 00:00</td>
+							</tr>
+							<tr>
+								<td>Tuesday</td>
+								<td class="table-time">00:00 - 00:00</td>
+							</tr>
+							<tr>
+								<td>Wednesday</td>
+								<td class="table-time">00:00 - 00:00</td>
+							</tr>
+							<tr>
+								<td>Thursday</td>
+								<td class="table-time">00:00 - 00:00</td>
+							</tr>
+							<tr>
+								<td>Friday</td>
+								<td class="table-time">00:00 - 00:00</td>
+							</tr>
+							<tr>
+								<td>Saturday</td>
+								<td class="table-time">00:00 - 00:00</td>
+							</tr>
+							<tr>
+								<td>Sunday</td>
+								<td class="table-time">00:00 - 00:00</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th valign="top" rowspan="3">Address:</th>
+								<td>Address line 1</td>
+							</tr>
+							<tr>
+								<td>Address line 2</td>
+							</tr>
+							<tr>
+								<td>Address line 3</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th valign="top" rowspan="2">Phone:</th>
+								<td>(00) 000 000</td>
+							</tr>
+							<tr>
+								<td>(000) 000 0000</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th>Email:</th>
+								<td>admin@flytothelimit.co.nz</td>
+							</tr>
+						</table>
+					</div>
+					<div class="contact-form">
+					<form id="contact-form" action="contact.php" method="get">
+						<div>
+							<label class="label" for="name">Name:</label>
+							<input type="text" id="name" required>
+						</div>
+						<div style="margin-top:8px">
+							<label class="label" for="email">Email:</label>
+							<input type="email" id="email" required>
+						</div>
+						<div style="margin-top:8px">
+							<label class="label" for="phone">Phone Number:</label>
+							<input type="tel" id="phone" required>
+						</div>
+						<div style="margin-top:8px">
+							<label class="label" for="message">Message:</label>
+							<textarea name="" id="message" cols="41" rows="7" required></textarea>
+						</div>
+						<input type="submit" id="contact-submit" value="submit">
+					</form>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- end of contact section -->
@@ -1010,6 +1150,7 @@
 			</div>
 		</div>
 		<!-- end of the expanded footer html -->
-
+		<script src="js/book-validation.js"></script>
+		<script src="js/patterns.js"></script>
 	</body>
 </html>
