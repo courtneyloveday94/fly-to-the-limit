@@ -509,7 +509,7 @@ div .image-holder, iframe {
 	color: #05ccdf;
 }
 
-#thumbnail-slider {
+.thumbnail-slider {
 	position: absolute;
 	bottom: 50px;
 	height: 100px;
@@ -518,13 +518,13 @@ div .image-holder, iframe {
 	overflow: auto;
 	white-space: nowrap;
 }
-#thumbnail-slider img {
+.thumbnail-slider img {
 	all: initial;
 	* {
 		all:unset;
 	}
 }
-#thumbnail-slider a img {
+.thumbnail-slider a img {
 	margin-right: 8px;
 	width:;
 	height:75px;
@@ -734,6 +734,9 @@ td {
 	font-size: 14px;
 	color: #545454;
 }
+.valign {
+	vertical-align: top;
+}
 .table-time {
 	padding-left: 30px;
 }
@@ -753,7 +756,6 @@ td {
 	font-weight: 800;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
-	background-color: none;
 	color: #545454;
 	margin-left: calc(50% - 50px);
 }

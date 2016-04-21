@@ -3,7 +3,7 @@
 	// for book-validation.js
 	var namePattern = new RegExp("^[a-zA-Z '.-]{1,30}$");
 	var emailPattern = new RegExp("^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i");
-	var phonePattern = new RegExp("^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$")
+	var phonePattern = new RegExp("[0-9+()/-]{3,50}")
 	var passengersPattern = new RegExp("^[0-9]{1,2}$")
 	var locationPattern = new RegExp("[0-9a-zA-Z./-]{1-50}")
 	var datePattern = new RegExp("^(0?[ 1-9]|[12][0-9]|3[01])[\/\-](0?[ 1-9]|1[012])[\/\-]\d{4}$")
