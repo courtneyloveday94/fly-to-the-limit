@@ -149,6 +149,7 @@ a {
 #home {
 	height: 30%;
 	position: relative;
+	min-height: 120px;
 }
 #vertical-center {
 	width: 960px;
@@ -221,6 +222,7 @@ a {
 #about-us {
 	height: calc(100% - 30px);
 	position: relative;
+	min-height: 740px;
 }
 #about-us:after {
 	content: '';
@@ -297,6 +299,7 @@ a {
 #flights {
 	height: calc(100% - 30px);
 	position: relative;
+	min-height: 665px;
 }
 
 #flights ul {
@@ -356,6 +359,7 @@ a {
 #gallery {
 	height: calc(100% - 30px);
 	position: relative;
+	min-height: 775px;
 }
 .fa {
 	color: #05ccdf;
@@ -565,6 +569,7 @@ div .image-holder, iframe {
 	position: relative;
 	width: 960px;
 	margin: 0 auto;
+	min-height: 770px;
 }
 #book-now:after {
 	content: '';
@@ -586,6 +591,14 @@ div .image-holder, iframe {
 	position: absolute;
 	top: calc(50% - 320px);
 	right: 0;
+}
+
+#book-now-right span {
+	font-weight: 300;
+	font-size: 12px;
+	text-transform: uppercase;
+	white-space: nowrap;
+
 }
 
 #book-now-info {
@@ -662,10 +675,7 @@ div .image-holder, iframe {
 #aircraft-group > label {
 	height: 90px;
 }
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  height:auto;
-}
+
 .form-section {
 	margin-top: 10px;
 }
@@ -692,6 +702,7 @@ input[type="number"]::-webkit-inner-spin-button {
 	height: calc(100% - 30px);
 	width: 100%;
 	color: #545454;
+	min-height: 723px;
 }
 #contact-container {
 	position: relative;
